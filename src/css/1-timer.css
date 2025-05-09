@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.timer-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+input {
+  width: 272px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 32px;
+  margin-right: 8px;
+  margin-top: 20px;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+input:active {
+  border: 1px solid #4e75ff;
+}
+
+input:disabled {
+  border: 1px solid #808080;
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.field {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+  text-align: center;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+.label {
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.timer-container button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* перехід для opacity */
+}
+button {
+  background: #4e75ff;
+  color: #ffffff;
+  border: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+button:active:not(:disabled) {
+  background-color: #004085;
+}
+button:disabled {
+  background-color: #cccccc; /* сірий фон для неактивного стану */
+  opacity: 0.6; /* затемняємо для інтуїтивного розуміння */
+  cursor: not-allowed;
+  pointer-events: none; /* блокуємо взаємодію, якщо атрибут disabled не працює */
+}

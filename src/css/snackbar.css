@@ -1,0 +1,102 @@
+.form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border: 2px solid #808080;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #fff;
+  outline: none;
+}
+
+.form input[type='number']:focus {
+  border-color: #4e75ff;
+}
+
+.form fieldset {
+  border: 2px solid #808080;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.form legend {
+  font-size: 16px;
+  color: #333;
+  padding: 0 5px;
+}
+/* Тут прихована стандарт кнопка  */
+.form input[type='radio'] {
+  width: 20px;
+}
+
+.form label[for] {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.form input[type='radio'] + span {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #808080;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.form input[type='radio']:checked + span {
+  background-color: #007bff;
+}
+
+.form input[type='radio']:checked + span::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
